@@ -1,0 +1,8 @@
+//новый образ Docker с именем “usersandarojectsdb-db”
+
+docker build -t usersandarojectsdb-db .
+
+//Эта команда создаст и запустит новый контейнер с именем “usersandarojectsdb-db”,
+//привязав порт 15430 на вашем компьютере к порту 5432 в контейнере
+
+docker run --name usersandarojectsdb-db -p 15430:5432 -d usersandarojectsdb-db
